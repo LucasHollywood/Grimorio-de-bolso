@@ -1,0 +1,425 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body{
+    background: rgba(255, 255, 245, 0.404);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.full-page {
+    text-transform: capitalize;
+    padding: 15px 5px;
+    margin: 0 auto;
+}
+
+.menu {
+    text-transform: capitalize;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.menu h1 {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.menu ul {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    float: left;
+    display: block;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+    background: #333;
+}
+
+.info-basica {
+    padding: 70px 15px 0px 15px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vida {
+    padding: 70px 15px 15px 15px;
+}
+
+.cid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cid p {
+    margin-bottom: 5px;
+}
+
+.cid input {
+    margin-right: 6px;
+    width: 30px;
+}
+
+.vida-full{
+    float: left;
+    width: 77%;
+}
+
+.pv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.pv p {
+    font-size:large;
+    text-decoration: solid;
+}
+.pv input {
+    width: 100px;
+    height: 80px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.pvt {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pvt p {
+    font-size: small;
+}
+
+.pvt input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.atributos {
+    width: 100%;
+    padding: 70px 15px 15px 15px;
+}
+
+.atributos .atrib-ini input {
+    width: 30px;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+
+.atributos .atrib-ini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.atrib-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.atrib-field {
+    display: flex;
+    width: 175px;
+    height: 248px;
+}
+
+.atributos .atrib-form {
+    flex-direction: row;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+.atributos .atrib-form label {
+    margin-right: 3px;
+}
+
+.atributos .atrib-form input {
+    width: 30px;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+
+.salv-field {
+    display: flex;
+    width: 150px;
+    height: 248px;
+}
+
+.atributos .salv-form {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+.atributos .salv-form label {
+    margin-right: 3px;
+}
+
+.atributos .salv-form input {
+    width: 30px;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+
+.peri-field {
+    display: flex;
+    justify-content: center;
+    height: 248px;
+    width: 380px;
+}
+
+.peri-div {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    float: left
+}
+
+.peri-form input {
+    width: 30px;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+
+.ataques {
+    padding: 70px 15px 15px 15px;
+}
+
+.ataques fieldset {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.nome-arma {
+    border: none;
+    text-align: center;
+}
+
+.nome-arma input {
+    padding-left: 5px;
+    text-transform: capitalize;
+    width: 30vw;
+    display: block;
+}
+
+.bonus-ataque {
+    border: none;
+    text-align: center;
+}
+
+.bonus-ataque input {
+    text-align: center;
+    text-transform: uppercase;
+    width: 20vw;
+    display: block;
+}
+
+.dano {
+    border: none;
+    text-align: center;
+}
+
+.dano input {
+    text-transform: uppercase;
+    text-align: center;
+    width: 30vw;
+    Display: block;
+}
+
+.tipo {
+    border: none;
+    text-align: center;
+}
+
+.tipo select {
+    text-transform: capitalize;
+    width: 6vw;
+    display: block;
+}
+
+.magias {
+    padding: 70px 15px 15px 15px;
+}
+
+.info-magia {
+    font-size: small;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    text-align: center;
+    width: 300px;
+    height: 85px;
+}
+
+.info-magia p input {
+    text-align: center;
+    width: 80px;
+}
+
+.truques {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 95;
+    text-align: center;
+}
+
+.truques fieldset {
+    padding: 5px;
+}
+
+.truques input {
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 49%;
+    display: inline-block;
+    padding-left: 5px;
+    text-transform: capitalize;
+}
+
+.magias1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 95;
+    text-align: center;
+}
+
+.magias1 input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 49%;
+    display: inline-block;
+    padding-left: 5px;
+    text-transform: capitalize;
+}
+
+.total-espaco {
+    font-size: small;
+    text-align: center;
+    width: 120px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.total-espaco input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inventario {
+    padding: 70px 15px 15px 15px;
+    display: block;
+}
+
+.inventario fieldset textarea {
+    text-transform: capitalize;
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    border-radius: 3%;
+    display: flex;
+}
+
+.inventario div {
+    margin: 10px;
+}
+
+.inventario fieldset fieldset {
+    padding: 2px 5px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 35px;
+    display: flex;
+    text-align: center;
+
+}
+
+.inventario fieldset fieldset input {
+    width: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.caracteristicas {
+    padding: 70px 15px 15px 15px;
+}
+
+.caracteristicas textarea {
+    text-transform: capitalize;
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    border-radius: 2%;
+}
+
+.caracteristicas fieldset fieldset {
+    margin: 10px;
+    border: none;
+}
+
+.anotacoes {
+    padding: 70px 15px 15px 15px;
+}
+
+.anotacoes fieldset {
+    border: none;
+}
+
+.anotacoes textarea {
+    text-transform: capitalize;
+    width: 100%;
+    height: 650px;
+    border-radius: 2%;
+    padding: 5px;
+}
