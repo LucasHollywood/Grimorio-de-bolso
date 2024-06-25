@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <script src="Assets/js/Teste.js"></script>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <h1>GRIMORIO DE BOLSO</h1>
+        <ul class="botoes">
+            <li><a href="#info-basica">Informações basicas</a></li>
+            <li><a href="#vida">V.I.D.A</a></li>
+            <li><a href="#atributos">Atributos</a></li>
+            <li><a href="#ataques">Ataques</a></li>
+            <li><a href="#magias">Magias</a></li>
+            <li><a href="#inventario">Inventário</a></li>
+            <li><a href="#caracteristicas">Caracteristicas Gerais</a></li>
+            <li><a href="#anotacoes">Anotações</a></li>
+        </ul>
+    </nav>
+    <div class="full-page">
+        <section id="info-basica" class="info-basica">
+            <form action="">
+                <fieldset>
+                    <legend>Informações basicas</legend>
+                    <div>
+                    <p> Nome do personagem:
+                        <input type="text">
+                    </p>
+                    <p>Classe:
+                        <input type="text">
+                    </p>
+                    <p>Nivel:
+                        <input type="number">
+                    </p>
+                    <p>Antecedente:
+                        <input type="text">
+                    </p>
+                    <p>Nome do jogador:
+                        <input type="text">
+                    </p>
+                    <p>Raça:
+                        <input type="text">
+                    </p>
+                    <p>Alinhamento:
+                        <input type="text">
+                    </p>
+                    <p>Pontos de Exp:
+                        <input type="number">
+                    </p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <main id="vida" class="vida">
+            <form action="">
+                <fieldset>
+                    <legend>Vida.Iniciativa.Deslocamento.Armadura</legend>
+                    <div class="cid">
+                        <p>Classe de armadura:
+                            <input type="number">
+                        </p>
+                        <p>Iniciativa:
+                            <input type="number">
+                        </p>
+                        <p>Deslocamento:
+                            <input type="number">
+                        </p>
+                    </div>
+                    <div class="vida-full">
+                        <fieldset>
+                            <div class="pv">
+                                <p><b>PONTOS DE VIDA</b></p>
+                                <p>
+                                    <input type="number">
+                                </p>
+                            </div>
+                            <div class="pvt">
+                                <p>
+                                    <input type="number">
+                                </p>
+                                <p>Pontos de vida temporarios</p>
+                            </div>
+                    </div>
+                    <fieldset>
+                        <legend>Salvaguarda contra morte</legend>
+                        <div class="scm">
+                            <p>Sucesso
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </p>
+                            <p>Falha
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </p>
+                        </div>
+                    </fieldset>
+                </fieldset>
+                </fieldset>
+            </form>
+        </main>
+        <section id="atributos" class="atributos">
+            <form action="">
+                <fieldset>
+                    <legend>Atributos</legend>
+                    <div class="atri-full">
+                        <div class="atrib-ini">
+                            <p>Inspiração
+                                <input type="number">
+                            </p>
+                            <p>Bonus proficiencia
+                                <input type="number">
+                            </p>
+                            <P class="sab-pass">Sabedoria passiva (Percepção)
+                                <input type="number">
+                            </P>
+                        </div>
+                        <div class="atrib-container">
+                            <fieldset class="atrib-field">
+                                <legend>Atributos</legend>
+                                <div>
+                                    <div class="atrib-form">
+                                        <p>
+                                            <label for="atrib-força">Força:</label>
+                                            <input type="number" id="atrib-força">
+                                        </p>
+                                        <p>
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="atrib-form">
+                                        <label for="atrib-dest">Destreza:</label>
+                                        <p>
+                                            <input type="number" id="atrib-dest">
+                                        </p>
+                                        <p>
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="atrib-form">
+                                        <label for="atrib-const">Constituição:</label>
+                                        <p>
+                                            <input type="number" id="atrib-const">
+                                        </p>
+                                        <p>
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="atrib-form">
+                                        <label for="atri-int">Inteligência:</label>
+                                        <p>
+                                            <input type="number" id="atri-int">
+                                        </p>
+                                        <p>
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="atrib-form">
+                                        <label for="atrib-sab">Sabedoria:</label>
+                                        <p>
+                                            <input type="number" id="atrib-sab">
+                                        </p>
+                                        <p>
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="atrib-form">
+                                        <label for="atrib-car">Carisma:</label>
+                                        <p>
+                                            <input type="number" id="atrib-car">
+                                        </p>
+                                        <p>
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="salv-field">
+                                <legend>Salvaguarda</legend>
+                                <div>
+                                    <div class="salv-form">
+                                        <p>
+                                            <label for="salv-força">Força:</label>
+                                            <input type="number" id="salv-força">
+                                        </p>
+                                    </div>
+                                    <div class="salv-form">
+                                        <label for="salv-dest">Destreza:</label>
+                                        <p>
+                                            <input type="number" id="salv-dest">
+                                        </p>
+                                    </div>
+                                    <div class="salv-form">
+                                        <label for="salv-const">Constituição:</label>
+                                        <p>
+                                            <input type="number" id="salv-const">
+                                        </p>
+                                    </div>
+                                    <div class="salv-form">
+                                        <label for="salv-int">Inteligência:</label>
+                                        <p>
+                                            <input type="number" id="salv-int">
+                                        </p>
+                                    </div>
+                                    <div class="salv-form">
+                                        <label for="salv-sab">Sabedoria:</label>
+                                        <p>
+                                            <input type="number" id="salv-sab">
+                                        </p>
+                                    </div>
+                                    <div class="salv-form">
+                                        <label for="salv-car">Carisma:</label>
+                                        <p>
+                                            <input type="number" id="salv-car">
+                                        </p>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="peri-field">
+                                <legend>Pericias</legend>
+                                <div class="peri-div">
+                                    <div class="peri-form">
+                                        <p>Acrobacia (Des)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Arcanimos (Int)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Atletismo (For)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Atuação (Car)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Enganação (Car)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Furtividade (Des)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>História (Int)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Intimidação (Car)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Intuição (Sab)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="peri-div">
+                                    <div class="peri-form">
+                                        <p>Investigação (Int)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Lidar com animais (Sab)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Medicina (Sab)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Natureza (Int)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Percepção (Sab)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Persuasão (Car)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Prestidigitação (Des)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Religião (Int)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                    <div class="peri-form">
+                                        <p>Sobrevivencia (Sab)
+                                            <input type="number">
+                                        </p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section id="ataques" class="ataques">
+            <form action="">
+                <fieldset>
+                    <legend>Ataques & Conjuração</legend>
+                    <fieldset class="nome-arma">
+                        <p>nome
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </p>
+                    </fieldset>
+                    <fieldset class="bonus-ataque">
+                        <P>Bônus de Ataque
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </P>
+                    </fieldset>
+                    <fieldset class="dano">
+                        <p>Dano
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </p>
+                    </fieldset>
+                    <fieldset class="tipo">
+                        <p>Tipo
+                            <select name="Tipo" id="tipo-dano">
+                                <optgroup>
+                                    <option value="cont">cont</option>
+                                    <option value="cort">cort</option>
+                                    <option value="perf">perf</option>
+                                </optgroup>
+                            </select>
+                            <select name="Tipo" id="tipo-dano">
+                                <optgroup>
+                                    <option value="cont">cont</option>
+                                    <option value="cort">cort</option>
+                                    <option value="perf">perf</option>
+                                </optgroup>
+                            </select>
+                            <select name="Tipo" id="tipo-dano">
+                                <optgroup>
+                                    <option value="cont">cont</option>
+                                    <option value="cort">cort</option>
+                                    <option value="perf">perf</option>
+                                </optgroup>
+                            </select>
+                            <select name="Tipo" id="tipo-dano">
+                                <optgroup>
+                                    <option value="cont">cont</option>
+                                    <option value="cort">cort</option>
+                                    <option value="perf">perf</option>
+                                </optgroup>
+                            </select>
+                            <select name="Tipo" id="tipo-dano">
+                                <optgroup>
+                                    <option value="cont">cont</option>
+                                    <option value="cort">cort</option>
+                                    <option value="perf">perf</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </section>
+        <section id="magias" class="magias">
+            <form action="">
+                <fieldset>
+                    <legend>Magias</legend>
+                    <fieldset class="info-magia">
+                        <legend>Classe conjuradora</legend>
+                        <p>Atributo de conjuração
+                            <input type="text">
+                        </p>
+                        <P>CD para evitar suas magias
+                            <input type="number">
+                        </P>
+                        <p>Modificador de ataque magico
+                            <input type="number">
+                        </p>
+                    </fieldset>
+                    <div class="truques">
+                        <fieldset>
+                            <legend>Truques</legend>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                    </div>
+                    <div class="magias1">
+                        <fieldset>
+                            <legend>Primeiro circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Segundo circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Terceiro circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Quarto circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Quinto circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Sexto circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Sétimo circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Oitavo circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>Total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Nono circulo</legend>
+                            <fieldset class="total-espaco">
+                                <legend>Total de espaços</legend>
+                                <input type="number">
+                            </fieldset>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </fieldset>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section id="inventario" class="inventario">
+            <form action="">
+                <fieldset>
+                    <legend>Inventario</legend>
+                    <fieldset class="aqui">
+                        <legend>Carteira</legend>
+                        <p>PC
+                            <input type="number">
+                        </p>
+                        <p>PP
+                            <input type="number">
+                        </p>
+                        <p>PE
+                            <input type="number">
+                        </p>
+                        <p>PO
+                            <input type="number">
+                        </p>
+                        <p>PL
+                            <input type="number">
+                        </p>
+                    </fieldset>
+                    <div>
+                        <p><textarea name="Inventário" id="invenstario"></textarea></p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section id="caracteristicas" class="caracteristicas">
+            <form action="">
+                <fieldset>
+                    <legend>Caracteriscas Gerais</legend>
+                    <fieldset>
+                        <legend>Traços de personalidade</legend>
+                        <p><textarea name="traco-persona" id="traco-persona"></textarea></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ideais</legend>
+                        <p><textarea name="Ideais" id="Ideais"></textarea></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Vinculos</legend>
+                        <p><textarea name="Vinculos" id="Vinculos"></textarea></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Fraquezas</legend>
+                        <p><textarea name="Fraquezas" id="Fraquezas"></textarea></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Caracteriscas & Talentos</legend>
+                        <p><textarea name="caract-talent" id="caract-talent"></textarea></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Outras Proficiencias & idiomas</legend>
+                        <p><textarea name="profi-idiomas" id="profi-idiomas"></textarea></p>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </section>
+        <section id="anotacoes" class="anotacoes">
+            <form action="">
+                <fieldset>
+                    <legend>Anotações</legend>
+                    <fieldset>
+                        <p><textarea name="anotacoes" id="anotacoes"></textarea></p>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
