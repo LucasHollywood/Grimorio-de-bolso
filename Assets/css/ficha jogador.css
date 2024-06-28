@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    background: #EFEFEF;
+    height: 5rem;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #363A46;
+    margin-left: 1.5rem;
+    width: 15%;
+    border-right: #BE4242 solid 0.2rem;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #363A46;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 85%
+}
+
+.botoes ul {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.botoes ul li {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.botoes ul li a {
+    text-decoration: none;
+    color: #363A46;
+}
+
+.botoes ul li a {
+    border-bottom: #BE4242 solid 0.2rem;
+
+}
+
+.botoes ul li a:hover {
+    border-bottom: #363A46 solid 0.2rem;
+    transition: all 400ms ease-in-out;
+
+}
