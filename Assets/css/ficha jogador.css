@@ -3,6 +3,23 @@
     padding: 0;
 }
 
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+    outline: none;
+    font-size: large;
+}
+
 .menu {
     width: 100%;
     display: flex;
@@ -57,4 +74,83 @@
     border-bottom: #363A46 solid 0.2rem;
     transition: all 400ms ease-in-out;
 
+}
+
+.menuFichajogador {
+    width: 100%;
+    display: flex;
+    background: #363A46;
+    height: 5rem;
+}
+
+.botoesFichajogador {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 85%
+}
+
+.botoesFichajogador ul {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.botoesFichajogador ul li {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.botoesFichajogador ul li a {
+    text-decoration: none;
+    color: #EFEFEF
+}
+
+.botoesFichajogador ul li a {
+    border-bottom: #BE4242 solid 0.2rem;
+
+}
+
+.botoesFichajogador ul li a:hover {
+    border-bottom: #363A46 solid 0.2rem;
+    transition: all 400ms ease-in-out;
+
+}
+
+.tituloInfo {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    justify-content: center;
+    row-gap: 4em;
+}
+
+.formPad input {
+    background: transparent;
+    border: none;
+    border-bottom: #BE4242 solid 0.2rem;
+    width: 80%;
+    height: 2rem;
+    ;
+}
+
+.atribMod {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background: #363A46;
+    height: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
 }
