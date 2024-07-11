@@ -25,7 +25,7 @@
         <nav class="botoesFichajogador">
             <ul>
                 <li><a href="#telaInforbasica">INFORMAÇÕES BASICAS</a></li>
-                <li><a href="#">V.I.D.A.</a></li>
+                <li><a href="#telaVida">V.I.D.A.</a></li>
                 <li><a href="#">ATRIBUTOS</a></li>
                 <li><a href="#">ATAQUES</a></li>
                 <li><a href="#">MAGIAS</a></li>
@@ -74,43 +74,132 @@
             </form>
         </div>
         <div class="atribMod">
-            <div class="atribFor">
+            <div>
                 <div>
-                    <input type="number">
+                    <input type="number" class="atribFor atribPad">
                 </div>
                 <p>(FOR)</p>
             </div>
-            <div class="atribDes">
+            <div>
                 <div>
-                    <input type="number">
+                    <input type="number" class="atribDes atribPad">
                 </div>
                 <p>(DES)</p>
             </div>
-            <div class="atribCons">
+            <div>
                 <div>
-                    <input type="number">
+                    <input type="number" class="atribCons atribPad">
                 </div>
                 <p>(CONS)</p>
             </div>
-            <div class="atribInt">
+            <div>
                 <div>
-                    <input type="number">
+                    <input type="number" class="atribInt atribPad">
                 </div>
                 <p>(INT)</p>
             </div>
-            <div class="atribSab">
+            <div>
                 <div>
-                    <input type="number">
+                    <input type="number" class="atribSab atribPad">
                 </div>
                 <p>(SAB)</p>
             </div>
-            <div class="atribCar">
+            <div>
                 <div>
-                    <input type="number">
+                    <input type="number" class="atribCar atribPad">
                 </div>
                 <p>(CAR)</p>
             </div>
-
+        </div>
+    </div>
+    <div class="telaVida" id="telaVida">
+        <h1 class="tituloInfo">
+            V.I.D.A.
+        </h1>
+        <h2>
+            VIDA-INICIATIVA-DESLOCAMENTO-ARMADURA
+        </h2>
+        <div class="vidaContent">
+            <div class="salvguardMort">
+                <div class="sucesso">
+                    <p>Sucesso</p>
+                    <div>
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <p>Salvaguarda Contra Morte</p>
+                <div class="falha">
+                    <p>Falha</p>
+                    <div>
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="hp">
+                <input type="number">
+                <p>Pontos de vida</p>
+                <div class="hpBotoes">
+                    <button class="cura">cura</button>
+                    <button class="descanso">descanso</button>
+                    <button class="dano">dano</button>
+                </div>
+            </div>
+            <div class="CID">
+                <div class="classArmd cidPad">
+                    <input type="number">
+                    <p>Classe de Armadura</p>
+                </div>
+                <div class="ini cidPad">
+                    <input type="number">
+                    <p>Iniciativa</p>
+                </div>
+                <div class="desloc cidPad">
+                    <input type="number">
+                    <p>Deslocamento</p>
+                </div>
+            </div>
+        </div>
+        <div class="atribMod">
+            <div>
+                <div>
+                    <input type="number" class="atribFor atribPad">
+                </div>
+                <p>(FOR)</p>
+            </div>
+            <div>
+                <div>
+                    <input type="number" class="atribDes atribPad">
+                </div>
+                <p>(DES)</p>
+            </div>
+            <div>
+                <div>
+                    <input type="number" class="atribCons atribPad">
+                </div>
+                <p>(CONS)</p>
+            </div>
+            <div>
+                <div>
+                    <input type="number" class="atribInt atribPad">
+                </div>
+                <p>(INT)</p>
+            </div>
+            <div>
+                <div>
+                    <input type="number" class="atribSab atribPad">
+                </div>
+                <p>(SAB)</p>
+            </div>
+            <div>
+                <div>
+                    <input type="number" class="atribCar atribPad">
+                </div>
+                <p>(CAR)</p>
+            </div>
         </div>
     </div>
     <footer>
