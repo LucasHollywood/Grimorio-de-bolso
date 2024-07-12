@@ -136,7 +136,7 @@ body {
 
 .tituloInfo {
     text-align: center;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .form {
@@ -177,7 +177,7 @@ body {
 .vidaContent {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .salvguardMort {
@@ -248,6 +248,10 @@ body {
     margin-left: 0.5rem;
 }
 
+.oculto {
+    display: none;
+}
+
 footer {
     background: #363A46;
     height: 1.5rem;
@@ -255,3 +259,4 @@ footer {
     padding: 2rem;
     z-index: 1;
 }
+
