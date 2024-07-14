@@ -1,0 +1,11 @@
+.oculto {
+    display: none;
+}
+
+.aqui {
+    display: none;
+}
+
+.teste2:checked~.aqui {
+    display: block;
+}

@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .menu {
     width: 100%;
     display: flex;
@@ -67,7 +79,7 @@
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #EFEFEF;
-    text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.6) ;
+    text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.6);
 }
 
 .beholder {
@@ -75,7 +87,7 @@
 }
 
 .beholder img {
-    -webkit-filter: drop-shadow(6px 8px 4px rgba(0, 0, 0, 0.4)); 
+    -webkit-filter: drop-shadow(6px 8px 4px rgba(0, 0, 0, 0.4));
 }
 
 .tela2 {
@@ -97,20 +109,20 @@
     background-color: #D9D9D9;
     width: 75%;
     border-left: #BE4242 solid 0.2rem;
-    display:flex;
 }
 
 .livros h1 {
+    display: block;
     color: #363A46;
     text-align: center;
     margin-top: 2rem;
-    border-bottom: #BE4242 solid 0.2rem;
+    text-decoration: underline #BE4242 solid 0.2rem;
 }
 
 .livros div {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .livroJogador {
@@ -132,7 +144,7 @@
     height: 23REM;
     margin: 2rem;
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.15);
-    
+
 }
 
 footer {
@@ -140,6 +152,5 @@ footer {
     height: 1.5rem;
     text-align: center;
     padding: 2rem;
-    box-shadow: 0px -60px 4px #000000;
     z-index: 1;
 }
